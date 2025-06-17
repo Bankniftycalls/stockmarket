@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bank Nifty Put Calls</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #87CEFA, #B0E0E6);
+      color: #222;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+    }
+    img.dp {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 22px;
+      margin: 10px 0;
+    }
+    p.description {
+      font-size: 16px;
+      margin: 15px 0;
+    }
+    .telegram-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #FF5722;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 10px 0;
+      font-size: 16px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    .countdown-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #4CAF50;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 16px;
+      margin: 15px 0;
+      text-decoration: none;
+    }
+    .note {
+      font-size: 14px;
+      margin-top: 25px;
+      padding: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="dp" src="https://img.freepik.com/free-photo/3d-rendering-financial-neon-bull_23-2151209605.jpg?w=360" alt="Stock Market DP">
+
+    <h1>Learn trading in simple but effective way</h1>
+
+    <a class="telegram-btn" href="https://telegram.me/+4CAW6e7j2DRkM2E9" target="_blank">Join Free Telegram</a>
+
+    <p class="description">
+      Daily 2-4 Jackpot Free Call, Live Market Analysis | 95% Accuracy,<br>BANK NIFTY NIFTY INDEX
+    </p>
+
+    <div>
+      <a href="#" class="countdown-btn" id="countdownBtn">Free joining ends in <span id="timer">25</span> seconds</a>
+    </div>
+
+    <a class="telegram-btn" href="https://telegram.me/+4CAW6e7j2DRkM2E9" target="_blank">Join Free Telegram</a>
+
+    <p class="note">
+      NOTE: We make trading Simple, structured, and profitable - even if you're starting from zero. Our step-by-step stock market training is built for every day people who want to understand the market and make smart, confident trades.
+    </p>
+  </div>
+
+  <script>
+    let timeLeft = 25;
+    const timerEl = document.getElementById("timer");
+    const countdownBtn = document.getElementById("countdownBtn");
+
+    const countdown = setInterval(() => {
+      timeLeft--;
+      timerEl.textContent = timeLeft;
+      if (timeLeft <= 0) {
+        clearInterval(countdown);
+        window.location.href = "https://telegram.me/+4CAW6e7j2DRkM2E9";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
