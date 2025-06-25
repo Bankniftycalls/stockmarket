@@ -10,8 +10,8 @@
   <meta name="author" content="Bank Nifty Experts">
   <meta property="og:title" content="Bank Nifty Put Calls – Free Daily Jackpot Tips">
   <meta property="og:description" content="Join 46,000+ traders getting daily accurate stock tips and live market insights.">
-  <meta property="og:image" content="https://cdn.jsdelivr.net/gh/yourusername/projectname/dpm.jpg">
-  <meta property="og:url" content="https://yourdomain.com/">
+  <meta property="og:image" content="https://bankniftycalls.github.io/stockmarket/dpm.jpg">
+  <meta property="og:url" content="https://bankniftycalls.github.io/stockmarket/">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Meta Pixel Code -->
@@ -32,6 +32,10 @@
     src="https://www.facebook.com/tr?id=1425814375280748&ev=PageView&noscript=1"/>
   </noscript>
   <!-- End Meta Pixel Code -->
+
+  <!-- Telegram Performance Optimizations -->
+  <link rel="preconnect" href="https://telegram.me">
+  <link rel="dns-prefetch" href="https://telegram.me">
 
   <style>
     body {
@@ -104,13 +108,11 @@
       margin-top: 25px;
       padding: 0 10px;
     }
-
     @keyframes pulse {
       0% { transform: scale(1); }
       50% { transform: scale(1.05); }
       100% { transform: scale(1); }
     }
-
     @media screen and (max-width: 480px) {
       h1 { font-size: 20px; }
       .telegram-btn, .countdown-btn { font-size: 14px; padding: 10px 20px; }
@@ -119,14 +121,16 @@
 </head>
 <body>
   <div class="container">
-    <img class="dp" src="https://cdn.jsdelivr.net/gh/yourusername/projectname/dpm.jpg" alt="Stock Market DP" loading="lazy" />
+    <img class="dp" src="https://bankniftycalls.github.io/stockmarket/dpm.jpg" alt="Stock Market DP" loading="lazy" />
 
     <h1>Bank Nifty Put Calls</h1>
     <h2>Learn trading in a simple but effective way</h2>
 
     <p><small>46,295+ Subscribers</small></p>
 
-    <a class="telegram-btn" href="https://telegram.me/+4CAW6e7j2DRkM2E9">JOIN FREE TELEGRAM</a>
+    <a class="telegram-btn" href="https://telegram.me/+4CAW6e7j2DRkM2E9">
+      JOIN FREE TELEGRAM
+    </a>
 
     <p class="description">
       Daily 2–4 Jackpot Free Calls<br>
@@ -134,10 +138,14 @@
     </p>
 
     <div>
-      <a href="#" class="countdown-btn" id="countdownBtn">Free joining ends in <span id="timer">25</span> seconds</a>
+      <a href="javascript:void(0);" class="countdown-btn" id="countdownBtn">
+        Free joining ends in <span id="timer">25</span> seconds
+      </a>
     </div>
 
-    <a class="telegram-btn" href="https://telegram.me/+4CAW6e7j2DRkM2E9">JOIN FREE TELEGRAM</a>
+    <a class="telegram-btn" href="https://telegram.me/+4CAW6e7j2DRkM2E9">
+      JOIN FREE TELEGRAM
+    </a>
 
     <ul>
       <li>✅ Free Daily Stock Tips & Breakout Alerts</li>
@@ -152,16 +160,13 @@
   </div>
 
   <script>
-    let timeLeft = 25;
-    const timerEl = document.getElementById("timer");
-    const countdownBtn = document.getElementById("countdownBtn");
-
+    let t = 25, el = document.getElementById("timer");
+    const redirect = "https://telegram.me/+4CAW6e7j2DRkM2E9";
     const countdown = setInterval(() => {
-      timeLeft--;
-      timerEl.textContent = timeLeft;
-      if (timeLeft <= 0) {
+      t--; el.textContent = t;
+      if (t <= 0) {
         clearInterval(countdown);
-        window.location.href = "https://telegram.me/+4CAW6e7j2DRkM2E9";
+        window.location.href = redirect;
       }
     }, 1000);
   </script>
